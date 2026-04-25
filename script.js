@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   revealOnScroll();
 
   // TYPING
-  const roles = ["Web Developer", "Backend Engineer", "UI/UX"];
+  const roles = ["Saya seorang Web Developer", "Eh bentar...", "Backend Engineer Kayanya..."];
   let i=0,j=0,del=false;
   function type() {
     const el = document.getElementById("typing");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!del && j===roles[i].length) { del=true; return setTimeout(type,1000); }
     if (del && j===0) { del=false; i=(i+1)%roles.length; }
 
-    setTimeout(type, del?50:100);
+    setTimeout(type, del?35:100);
   }
   type();
 

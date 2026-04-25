@@ -34,6 +34,11 @@ body {
   transition: 0.3s;
 }
 
+.btn-secondary {
+  border: 2px solid #a855f7;
+  transition: 0.3s;
+}
+
 .btn-primary:hover {
   background: #a855f7;
   box-shadow: 0 0 15px #a855f7;
@@ -215,6 +220,8 @@ body.light .hero-bg {
   background-color: #eaeaea;
 }
 
+
+
 /* CARD & BOX */
 body.light .skill-card,
 body.light .project-card,
@@ -246,3 +253,4 @@ body.light .btn-primary:hover {
 body.light nav {
   background: rgba(255, 255, 255, 0.8);
 }
+
