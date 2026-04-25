@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Hasan</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white font-[Inter]">
+
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-10 py-5 bg-[#0a0f1c]/80 backdrop-blur z-50">
+  <h1 class="text-xl font-bold">Rizal<span class="text-purple-500">.</span></h1>
+
+  <ul class="hidden md:flex gap-8 text-gray-300">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <button id="theme-toggle" class="text-xl">
+  🌙
+</button>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center px-10 hero-bg">
+
+  <div class="grid md:grid-cols-2 gap-10 items-center w-full">
+
+    <!-- FOTO -->
+    <div class="flex flex-col items-center">
+      <div class="photo-box">
+        <img src="profile.jpg" class="w-full h-full object-cover rounded-xl">
+      </div>
+
+      <h2 class="mt-4 text-lg text-gray-300 text-center">
+        Muhammad Hasan<br>Syaifurrizal
+      </h2>
+    </div>
+
+    <!-- TEXT -->
+    <div>
+      <p class="text-gray-400 text-lg">Halo, selamat datang</p>
+
+      <h1 class="text-5xl font-bold leading-tight mt-2">
+        Di web Portofolio <br> Saya
+      </h1>
+
+      <p class="mt-4 text-purple-400 font-medium">
+      <span id="typing"></span>
+        </p>
+
+      <div class="flex gap-5 mt-8">
+        <a href="#about" class="btn-primary">Lanjut Cari Tau ></a>
+        <a href="#" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal min-h-screen flex items-center justify-center px-6 relative">
+
+  <!-- Glow Border -->
+  <div class="absolute inset-10 rounded-3xl border border-purple-500/20 glow-box"></div>
+
+  <div class="max-w-4xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
+
+    <!-- TEXT (DIKECILIN & CENTER FEEL) -->
+    <div class="max-w-md mx-auto md:mx-0">
+      <h1 class="text-4xl font-bold mb-5 text-center md:text-left">About Me</h1>
+
+      <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">
+        Saya adalah seorang web developer pemula,
+        ya gak pemula pemula banget sih.
+      </p>
+
+      <!-- STATS -->
+      <div class="flex justify-center md:justify-start gap-8 mt-8">
+        <div>
+          <h2 class="text-3xl font-bold text-purple-400">5+</h2>
+          <p class="text-gray-400 text-sm">Project</p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-bold text-purple-400">1+</h2>
+          <p class="text-gray-400 text-sm">Years</p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-bold text-purple-400">
+            3.--<span class="text-gray-400">/4.00</span>
+          </h2>
+          <p class="text-gray-400 text-sm">GPA</p>
+        </div>
+      </div>
+
+      <p class="text-gray-500 mt-5 italic text-center md:text-left">
+        Shinra Tensi
+      </p>
+    </div>
+
+    <!-- LINE -->
+    <div class="hidden md:block absolute left-1/2 top-24 bottom-24 w-[1px] bg-gradient-to-b from-transparent via-purple-500/40 to-transparent"></div>
+
+    <!-- CARD -->
+    <div class="flex justify-center relative">
+      <div class="lanyard"></div>
+
+      <div class="id-card">
+        <img src="profile.jpg" class="rounded-xl mb-4 grayscale">
+        <h3 class="font-semibold text-lg">Backend</h3>
+        <p class="text-sm text-gray-400">Web Development</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal px-10 py-20">
+  <h1 class="text-4xl font-bold mb-2">Tools & Technologies</h1>
+  <p class="text-gray-400 mb-10">My Professional Skills</p>
+
+  <div class="grid md:grid-cols-4 gap-6">
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:react" width="40"></iconify-icon>
+      <p>React JS</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:nextjs-icon" width="40"></iconify-icon>
+      <p>Next JS</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:tailwindcss-icon" width="40"></iconify-icon>
+      <p>Tailwind</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:javascript" width="40"></iconify-icon>
+      <p>Javascript</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:nodejs-icon" width="40"></iconify-icon>
+      <p>Node JS</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="mdi:github" width="40"></iconify-icon>
+      <p>Github</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:html-5" width="40"></iconify-icon>
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-card">
+      <iconify-icon icon="logos:css-3" width="40"></iconify-icon>
+      <p>CSS</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="project" class="reveal px-10 py-20">
+  <h1 class="text-4xl font-bold mb-2">My Projects</h1>
+  <p class="text-gray-400 mb-10">Some of my recent work</p>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- PROJECT CARD -->
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" class="rounded-xl mb-4">
+
+      <h3 class="text-xl font-semibold">Website E-Commerce</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Built with React & Node.js, featuring authentication and payment system.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <iconify-icon icon="logos:react" width="25"></iconify-icon>
+        <iconify-icon icon="logos:nodejs-icon" width="25"></iconify-icon>
+      </div>
+
+      <div class="flex gap-4 mt-5">
+        <a href="#" class="project-btn">Demo</a>
+        <a href="#" class="project-btn-outline">Code</a>
+      </div>
+    </div>
+
+    <!-- DUPLICATE -->
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" class="rounded-xl mb-4">
+
+      <h3 class="text-xl font-semibold">Portfolio Website</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Personal portfolio with modern UI and smooth animation.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <iconify-icon icon="logos:html-5" width="25"></iconify-icon>
+        <iconify-icon icon="logos:css-3" width="25"></iconify-icon>
+      </div>
+
+      <div class="flex gap-4 mt-5">
+        <a href="#" class="project-btn">Demo</a>
+        <a href="#" class="project-btn-outline">Code</a>
+      </div>
+    </div>
+
+    <!-- DUPLICATE -->
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" class="rounded-xl mb-4">
+
+      <h3 class="text-xl font-semibold">Dashboard Admin</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Admin dashboard with analytics and user management.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <iconify-icon icon="logos:javascript" width="25"></iconify-icon>
+        <iconify-icon icon="logos:firebase" width="25"></iconify-icon>
+      </div>
+
+      <div class="flex gap-4 mt-5">
+        <a href="#" class="project-btn">Demo</a>
+        <a href="#" class="project-btn-outline">Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="reveal px-6 py-24 flex justify-center">
+
+  <div class="max-w-3xl w-full text-center">
+
+    <h1 class="text-4xl font-bold mb-4">Contact Me</h1>
+    <p class="text-gray-400 mb-10">
+      Feel free to reach out for collaboration or just a friendly hello 👋
+    </p>
+
+    <form class="space-y-6">
+
+      <!-- NAME -->
+      <input type="text" placeholder="Your Name"
+        class="contact-input">
+
+      <!-- EMAIL -->
+      <input type="email" placeholder="Your Email"
+        class="contact-input">
+
+      <!-- MESSAGE -->
+      <textarea rows="5" placeholder="Your Message"
+        class="contact-input"></textarea>
+
+      <!-- BUTTON -->
+      <button class="btn-primary w-full">
+        Send Message 🚀
+      </button>
+
+    </form>
+
+    <!-- SOCIAL ICON -->
+<div class="flex justify-center gap-8 mt-12">
+
+  <a href="#" class="social-icon">
+    <iconify-icon icon="mdi:github"></iconify-icon>
+  </a>
+
+  <a href="#" class="social-icon">
+    <iconify-icon icon="mdi:linkedin"></iconify-icon>
+  </a>
+
+  <a href="#" class="social-icon">
+    <iconify-icon icon="mdi:instagram"></iconify-icon>
+  </a>
+
+</div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+<p class="text-gray-500 text-sm mt-10 text-center">
+  © 2026 Hasan Portfolio. All rights reserved.
+</p>
+</body>
+</html>
