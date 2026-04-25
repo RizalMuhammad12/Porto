@@ -22,60 +22,111 @@
 
   <body class="bg-black text-white font-[Inter]">
     <div class="bg-grid-animate"></div>
-    <nav
-      class="fixed top-0 w-full flex justify-between items-center px-10 py-5 bg-[#0a0f1c]/80 backdrop-blur z-50"
-    >
-      <h1 class="text-xl font-bold">
-        Rizal<span class="text-purple-500">.</span>
-      </h1>
+    <nav class="fixed top-0 w-full flex justify-between items-center px-6 md:px-10 py-5 bg-[#0a0f1c]/80 backdrop-blur z-[999]">
+  <h1 class="text-xl font-bold">Rizal<span class="text-purple-500">.</span></h1>
 
-      <ul class="hidden md:flex gap-6 items-center text-gray-300">
-  <li><a href="#home" class="nav-link">Home</a></li>
-  <li><a href="#about" class="nav-link">About</a></li>
-  <li><a href="#skills" class="nav-link">Skills</a></li>
-  <li><a href="#project" class="nav-link">Project</a></li>
-  <li><a href="#contact" class="nav-link">Contact</a></li>
-  <button id="theme-toggle" class="text-xl ml-4">🌙</button>
-</ul>
-    </nav>
+  <ul class="hidden md:flex gap-6 items-center text-gray-300">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#project" class="nav-link">Project</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li class="relative z-[100]">
+    <button id="theme-toggle" class="text-xl ml-4 cursor-pointer hover:scale-110 transition-transform">🌙</button>
+  </li>
+    
+  </ul>
+
+  <div class="md:hidden flex items-center gap-4">
+    <button id="theme-toggle-mobile" class="text-xl">🌙</button>
+    <button id="hamburger" class="text-3xl text-gray-300 focus:outline-none">
+      <iconify-icon icon="mdi:menu"></iconify-icon>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 bg-[#0a0f1c]/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center gap-8 text-2xl font-semibold transform translate-x-full transition-transform duration-300 md:hidden">
+  <a href="#home" class="mobile-link text-white hover:text-purple-400">Home</a>
+  <a href="#about" class="mobile-link text-white hover:text-purple-400">About</a>
+  <a href="#skills" class="mobile-link text-white hover:text-purple-400">Skills</a>
+  <a href="#project" class="mobile-link text-white hover:text-purple-400">Project</a>
+  <a href="#contact" class="mobile-link text-white hover:text-purple-400">Contact Me</a>
+</div>
 
     <!-- HERO -->
-    <section id="home" class="min-h-screen flex items-center px-10 hero-bg">
-      <div class="grid md:grid-cols-2 gap-10 items-center w-full">
-        <!-- FOTO -->
-        <div class="flex flex-col items-center">
-          <div class="photo-box">
-            <img
-              src="profile.jpg"
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </div>
+  <section id="home" class="min-h-screen flex items-center px-6 md:px-10 pt-28 md:pt-0 hero-bg">
+  
+  <div class="grid md:grid-cols-2 gap-10 items-center w-full max-w-7xl mx-auto">
+    
+    <div class="flex flex-col items-center">
+      
+      <div class="relative w-[320px] h-[320px] flex items-center justify-center group">
+        <div class="absolute inset-0 rounded-full border border-purple-500/20 group-hover:border-purple-500/50 transition-colors duration-500"></div>
+        <div class="absolute inset-8 rounded-full border border-purple-500/10"></div>
 
-          <h2 class="mt-4 text-lg text-gray-300 text-center">
-            Muhammad Hasan<br />Syaifurrizal
-          </h2>
+        <div class="w-48 h-48 relative z-10">
+          <img src="profile.jpg" class="w-full h-full object-cover rounded-full border-4 border-[#0a0f1c] relative z-10" draggable="false" />
+          <div class="absolute inset-0 bg-purple-500/30 blur-2xl -z-10 rounded-full"></div>
         </div>
 
-        <!-- TEXT -->
-        <div>
-          <p class="text-gray-400 text-lg">Halo, selamat datang</p>
-
-          <h1 class="text-5xl font-bold leading-tight mt-2">
-            Di web Portofolio <br />
-            Saya
-          </h1>
-
-          <p class="mt-4 text-purple-400 font-medium">
-            <span id="typing"></span>
-          </p>
-
-          <div class="flex gap-5 mt-8">
-            <a href="#about" class="btn-primary">Lanjut Cari Tau ></a>
-            <a href="#contact" class="btn-primary">Contact Me</a>
+        <div class="absolute w-full h-full animate-orbit group-hover:pause-animate">
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(0deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:laravel" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(45deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:mysql" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(90deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:tailwindcss-icon" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(135deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:javascript" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(180deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:nodejs-icon" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(225deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:python" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(270deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:html-5" width="24"></iconify-icon></div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 w-0 h-0" style="transform: rotate(315deg) translateX(160px);">
+            <div class="orbit-icon"><iconify-icon icon="logos:css-3" width="24"></iconify-icon></div>
           </div>
         </div>
+      </div> <h2 class="mt-6 text-lg text-gray-300 text-center relative z-20">
+        Muhammad Hasan<br />Syaifurrizal
+      </h2>
+    </div>
+
+    <div class="text-center md:text-left flex flex-col items-center md:items-start">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium mb-4">
+        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+        Open for Internship
       </div>
-    </section>
+
+      <p class="text-gray-400 text-lg">Halo, selamat datang</p>
+
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-2">
+        Di web Portofolio <br />
+        Saya
+      </h1>
+
+      <p class="mt-4 text-purple-400 font-medium text-xl h-8">
+        <span id="typing" class="border-r-2 border-purple-500 pr-1 animate-pulse"></span>
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-4 mt-8 w-full md:w-auto relative z-30">
+  <a href="#about" class="btn-primary text-center">Lanjut Cari Tau ></a>
+  <a href="#contact" class="btn-outline text-center text-white hover:text-purple-400 bg-[#0a0f1c]/50 backdrop-blur-sm">Contact Me</a>
+</div>
+      
+    </div>
+    
+  </div>
+</section>
 
     <!-- ABOUT -->
     <section id="about" class="reveal min-h-screen flex items-center justify-center px-6 relative py-20">
@@ -123,14 +174,16 @@
     <div class="flex flex-col items-center gap-10 relative">
       <div class="hidden md:block absolute -left-6 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-purple-500/40 to-transparent"></div>
 
-      <div class="relative flex flex-col items-center">
-        <div class="lanyard"></div>
-        <div class="id-card">
-          <img src="profile.jpg" class="rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500" />
-          <h3 class="font-semibold text-lg">Backend Dev</h3>
-          <p class="text-sm text-gray-400">POLIBAN Student</p>
-        </div>
-      </div>
+      
+
+     <div id="card-wrapper" class="relative flex flex-col items-center cursor-grab" style="transform-origin: top center; top: -20px; padding-top: 20px;">
+  <div class="lanyard"></div>
+  <div class="id-card select-none">
+    <img src="profile.jpg" draggable="false" class="rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500 pointer-events-none" />
+    <h3 class="font-semibold text-lg">Backend Dev</h3>
+    <p class="text-sm text-gray-400">POLIBAN Student</p>
+  </div>
+</div>
 
       <div class="w-full max-w-[400px] p-4 rounded-2xl bg-black/40 border border-white/5 backdrop-blur-sm">
         <p class="text-gray-400 text-xs mb-3 flex items-center gap-2 uppercase tracking-widest">
